@@ -1,5 +1,5 @@
 #include "./AppComponent.hpp"
-#include "./controller/AppController.cpp"
+#include "./controller/AppController.hpp"
 
 #include "DotEnv.hpp"
 
@@ -14,11 +14,11 @@ void run() {
     router->addController(std::make_shared<AppController>());
 
     OATPP_COMPONENT(std::shared_ptr<oatpp::network::ConnectionHandler>, connectionHandler);
-    OATPP_COMPONENT(std::shared_ptr<oatpp::network::ConnectionProvider>, connectionProvider);
+    OATPP_COMPONENT(std::shared_ptr<oatpp::network::ServerConnectionProvider>, serverConnectionProvider);
 
-    oatpp::network::Server server(connectionProvider, connectionHandler);
+    oatpp::network::Server server(serverConnectionProvider, connectionHandler);
     
-    OATPP_LOGi("simple-api", "Server running on port {}", connectionProvider->getProperty("port").toString());
+    OATPP_LOGi("simple-api", "Server running on port {}", serverConnectionProvider->getProperty("port").toString());
 
     server.run();
 }
