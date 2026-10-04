@@ -1,4 +1,5 @@
-cmake_minimum_required(VERSION 3.2.0)
+cmake_minimum_required(VERSION 3.5.0)
+
 set(project_name simple-api)
 
 project(${project_name})
@@ -27,14 +28,14 @@ target_include_directories(${project_name}-lib PUBLIC src)
 
 add_executable(${project_name}-exe
         src/App.cpp
-        test/app/MyApiTestClient.hpp)
+        test/app/AppApiTestClient.hpp)
 target_link_libraries(${project_name}-exe ${project_name}-lib)
 add_dependencies(${project_name}-exe ${project_name}-lib)
 
 add_executable(${project_name}-test
         test/tests.cpp
         test/app/TestComponent.hpp
-        test/app/MyApiTestClient.hpp
+        test/app/AppApiTestClient.hpp
         test/AppControllerTest.cpp
         test/AppControllerTest.hpp
 )
