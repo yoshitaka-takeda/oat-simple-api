@@ -8,7 +8,6 @@ oat-simple-api
     ├── AppComponent.hpp
     ├── App.cpp
     ├── controller
-    │   ├── AppController.cpp
     │   └── AppController.hpp
     ├── DotEnv.hpp
     └── dto
