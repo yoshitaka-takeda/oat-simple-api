@@ -1,1 +1,15 @@
 # oat++-simple-api
+
+oat-simple-api
+├── CMakeLists.txt
+├── .env.example
+├── .gitignore
+└── src
+    ├── AppComponent.hpp
+    ├── App.cpp
+    ├── controller
+    │   ├── AppController.cpp
+    │   └── AppController.hpp
+    ├── DotEnv.hpp
+    └── dto
+        └── MessageDTO.hpp
