@@ -12,4 +12,4 @@ oat-simple-api
     │   └── AppController.hpp
     ├── DotEnv.hpp
     └── dto
-        └── MessageDTO.hpp
+        └── MessageDto.hpp
