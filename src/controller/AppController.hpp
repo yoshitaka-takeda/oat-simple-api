@@ -1,7 +1,7 @@
 #ifndef AppController_hpp
 #define AppController_hpp
 
-#include "../dto/MessageDTO.hpp"
+#include "../dto/MessageDto.hpp"
 
 #include "oatpp/web/server/api/ApiController.hpp"
 #include "oatpp/macro/codegen.hpp"
