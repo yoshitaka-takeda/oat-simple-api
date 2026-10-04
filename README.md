@@ -1,5 +1,6 @@
 # oat++-simple-api
 
+```text
 oat-simple-api
 ├── CMakeLists.txt
 ├── .env.example
@@ -12,7 +13,7 @@ oat-simple-api
     ├── DotEnv.hpp
     └── dto
         └── MessageDto.hpp
-
+```
 
 Server Running Indicator:
 ![Server Running with dotenv applied](test-result/server-running-indicator.png)
